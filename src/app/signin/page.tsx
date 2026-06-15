@@ -59,13 +59,13 @@ export default function SignIn() {
         {/* Quote overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-12">
           <blockquote className="text-white/95 text-xl md:text-2xl leading-relaxed font-light italic mb-4">
-            &ldquo;The Constitution is not a mere lawyers&apos; document, it is a vehicle of Life, and its spirit is, always, the spirit of Age.&rdquo;
+            &ldquo;Bail is the rule, jail is the exception. Deprivation of liberty must be an exception and not the rule.&rdquo;
           </blockquote>
           <div className="flex items-center gap-3">
             <div className="w-px h-8 bg-[#C69C3F]" />
             <div>
-              <p className="text-[#C69C3F] text-sm font-medium">Dr. B.R. Ambedkar</p>
-              <p className="text-white/50 text-xs">Architect of the Indian Constitution</p>
+              <p className="text-[#C69C3F] text-sm font-medium">Justice V.R. Krishna Iyer</p>
+              <p className="text-white/50 text-xs">Supreme Court of India</p>
             </div>
           </div>
         </div>

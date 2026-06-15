@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/hero-courthouse.png" alt="" fill sizes="100vw" className="object-cover" priority />
+          <Image src="/images/hero-courthouse.png" alt="Indian courthouse building" fill sizes="100vw" className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/60" />
         </div>
         <div className="container relative z-10 py-20 md:py-32">
@@ -194,6 +194,11 @@ export default function HomePage() {
             <Link href="/faq">
               <Button variant="outline" className="rounded-full border-[#e8e3db] text-[#6B7280] hover:bg-[#F9F7F4] h-11 px-7 text-sm shadow-none w-full sm:w-auto">
                 Read the FAQ
+              </Button>
+            </Link>
+            <Link href="/donate">
+              <Button variant="outline" className="rounded-full border-[#C69C3F] text-[#C69C3F] hover:bg-[#C69C3F]/5 h-11 px-7 text-sm shadow-none w-full sm:w-auto">
+                Donate to the cause
               </Button>
             </Link>
           </div>

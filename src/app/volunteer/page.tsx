@@ -68,7 +68,7 @@ export default function Volunteer() {
           </div>
           <h2 className="text-xl font-medium text-[#1A1A2E] mb-3">Phase 1 onboarding is complete</h2>
           <p className="text-sm text-[#6B7280] mb-6">
-            We are currently operating in Delhi NCR and Madhya Pradesh. Phase 2 onboarding for additional regions opens in Q4 2026.
+            We are currently operating in Delhi and Madhya Pradesh. Phase 2 onboarding for additional regions opens in Q4 2026.
           </p>
           <Button disabled className="rounded-full bg-[#1E3A5F] text-white text-sm h-10 px-6 shadow-none opacity-50 cursor-not-allowed">
             Panel Full — Phase 1

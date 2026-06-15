@@ -113,6 +113,10 @@ export default function About() {
           <Link href="/apply" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline">
             Apply for legal assistance <ArrowRight className="w-3.5 h-3.5 ml-1" />
           </Link>
+          <span className="text-[#d4cfc7] mx-2">·</span>
+          <Link href="/donate" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+            Support our mission <ArrowRight className="w-3.5 h-3.5 ml-1" />
+          </Link>
         </div>
       </section>
     </div>
