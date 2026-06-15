@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Scale, Landmark, FileCheck, Users, Clock } from "lucide-react";
+import { Scale, Landmark, FileCheck, Users, Clock, Gavel, MessageSquare } from "lucide-react";
 
 export default function Volunteer() {
   return (
@@ -26,7 +26,7 @@ export default function Volunteer() {
           <h2 className="text-xl font-medium text-[#1A1A2E] mb-4">Why join our panel?</h2>
           <div className="space-y-3 text-sm text-[#6B7280] leading-relaxed">
             <p>Most legal technology platforms help users find lawyers for a fee. NyayaSetu does not operate a marketplace. We coordinate representation for indigent citizens who genuinely cannot afford private counsel.</p>
-            <p>By joining our panel, you maintain your full professional independence while we handle case intake, eligibility screening, document collection, and impact reporting. You focus on what you do best — advocating for your client.</p>
+            <p>By joining our panel, you maintain your full professional independence while we handle case intake, eligibility screening, document collection, and impact reporting. You focus on what you do best — advocating for your client, and get paid what you are worth while doing it.</p>
           </div>
         </div>
       </section>
@@ -43,6 +43,8 @@ export default function Volunteer() {
               { icon: Landmark, label: "Excellent Professional Standing", desc: "No pending disciplinary proceedings or ethical complaints." },
               { icon: FileCheck, label: "Relevant Domain Expertise", desc: "Experience in criminal law, family law, or constitutional matters." },
               { icon: Users, label: "Commitment to Public Service", desc: "Willingness to dedicate a minimum of 2 cases per quarter." },
+              { icon: Gavel, label: "Active Legal Practice", desc: "Currently practicing at the court of law in India." },
+              { icon: MessageSquare, label: "Communication Skills", desc: "Good written and communication skills." },
             ].map((item) => (
               <div key={item.label} className="flex gap-3 p-4 border border-[#e8e3db] rounded-xl bg-white">
                 <div className="w-9 h-9 bg-[#1E3A5F]/8 rounded-lg flex items-center justify-center shrink-0">
