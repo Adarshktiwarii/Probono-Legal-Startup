@@ -194,9 +194,29 @@ export default function Eligibility() {
       <section className="py-14">
         <div className="container max-w-xl text-center">
           <p className="text-sm text-[#6B7280] mb-4">Think you qualify? Our application takes less than 10 minutes.</p>
-          <Link href="/apply" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline font-medium">
+          <Link href="/apply" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline font-medium mb-8">
             Apply for free legal aid <ArrowRight className="w-3.5 h-3.5 ml-1" />
           </Link>
+
+          <div className="pt-8 border-t border-[#e8e3db]">
+            <p className="text-sm font-medium text-[#1A1A2E] mb-2">Other Government Initiatives</p>
+            <p className="text-sm text-[#6B7280] mb-4 max-w-md mx-auto">
+              If you do not meet our eligibility criteria or live outside our operational regions, you may still find help through these official Government of India portals:
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="https://tele-law.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+                Tele-Law Portal <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+              <span className="text-[#d4cfc7] hidden sm:inline">·</span>
+              <a href="https://probono-doj.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+                Nyaya Bandhu <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+              <span className="text-[#d4cfc7] hidden sm:inline">·</span>
+              <a href="https://ecourts.gov.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+                eCourts India <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

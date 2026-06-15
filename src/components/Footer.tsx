@@ -11,15 +11,15 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#e8e3db] bg-[#F9F7F4]">
       <div className="container py-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          <div className="col-span-2 md:col-span-1">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
+          <div className="col-span-2 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-3">
               <div className="w-6 h-6 bg-[#1E3A5F] rounded-md flex items-center justify-center">
                 <Scale className="w-3 h-3 text-[#C69C3F]" />
               </div>
               <span className="text-sm font-medium text-[#1A1A2E]">IPBLI</span>
             </Link>
-            <p className="text-xs text-[#6B7280] leading-relaxed">
+            <p className="text-xs text-[#6B7280] leading-relaxed pr-8">
               A Section 8 non-profit providing free legal representation to eligible citizens across India.
             </p>
           </div>
@@ -39,6 +39,15 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-[#1E3A5F] transition-colors">About</Link></li>
               <li><Link href="/volunteer" className="hover:text-[#1E3A5F] transition-colors">Volunteer</Link></li>
               <li><Link href="/donate" className="hover:text-[#1E3A5F] transition-colors">Donate</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-[11px] font-medium text-[#1A1A2E] uppercase tracking-wider mb-3">Govt Initiatives</h4>
+            <ul className="space-y-2 text-xs text-[#6B7280]">
+              <li><a href="https://tele-law.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E3A5F] transition-colors">Tele-Law</a></li>
+              <li><a href="https://probono-doj.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E3A5F] transition-colors">Nyaya Bandhu</a></li>
+              <li><a href="https://ecourts.gov.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E3A5F] transition-colors">eCourts India</a></li>
             </ul>
           </div>
 

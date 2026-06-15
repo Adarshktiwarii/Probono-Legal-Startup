@@ -47,10 +47,30 @@ export default function FAQ() {
           </Accordion>
 
           <div className="mt-12 pt-8 border-t border-[#e8e3db] text-center">
-            <p className="text-sm text-[#6B7280] mb-3">Still have questions?</p>
-            <Link href="/contact" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline font-medium">
-              Contact our operations team <ArrowRight className="w-3.5 h-3.5 ml-1" />
-            </Link>
+            <p className="text-sm font-medium text-[#1A1A2E] mb-2">Other Government Initiatives</p>
+            <p className="text-sm text-[#6B7280] mb-4 max-w-md mx-auto">
+              If you do not meet our eligibility criteria or live outside our operational regions, you may still find help through these official Government of India portals:
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <a href="https://tele-law.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+                Tele-Law Portal <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+              <span className="text-[#d4cfc7] hidden sm:inline">·</span>
+              <a href="https://probono-doj.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+                Nyaya Bandhu <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+              <span className="text-[#d4cfc7] hidden sm:inline">·</span>
+              <a href="https://ecourts.gov.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#C69C3F] hover:underline">
+                eCourts India <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+            </div>
+            
+            <div className="pt-8 border-t border-[#e8e3db]">
+              <p className="text-sm text-[#6B7280] mb-3">Still have questions?</p>
+              <Link href="/contact" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline font-medium">
+                Contact our operations team <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
