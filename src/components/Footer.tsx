@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Scale } from "lucide-react";
+import { Scale, Heart } from "lucide-react";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -61,9 +61,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-5 border-t border-[#e8e3db] flex flex-col md:flex-row justify-between items-center gap-2 text-[11px] text-[#6B7280]">
-          <p>&copy; {new Date().getFullYear()} IPBLI Foundation. All rights reserved.</p>
-          <p>Registered Section 8 Non-Profit · New Delhi, India</p>
+        <div className="pt-5 border-t border-[#e8e3db] flex flex-col items-center gap-2 text-[11px] text-[#6B7280]">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-2">
+            <p>&copy; {new Date().getFullYear()} IPBLI Foundation. All rights reserved.</p>
+            <p>Registered Section 8 Non-Profit · New Delhi, India</p>
+          </div>
+          <p className="flex items-center mt-2">
+            Developed and hosted by IPBLI with love in Bangalore, India <Heart className="w-3.5 h-3.5 text-[#C75B39] mx-1 fill-current" />
+          </p>
         </div>
       </div>
 

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, CheckCircle2, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Contact() {
@@ -61,7 +61,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#1A1A2E]">Email</p>
-                  <a href="mailto:admin@ipbli.org" className="text-sm text-[#1E3A5F] hover:underline">admin@ipbli.org</a>
+                  <a href="mailto:care@ipbli.org" className="text-sm text-[#1E3A5F] hover:underline">care@ipbli.org</a>
                   <p className="text-xs text-[#6B7280] mt-0.5">Response within 48–72 hours</p>
                 </div>
               </div>
@@ -72,9 +72,18 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#1A1A2E]">Registered Office</p>
-                  <p className="text-sm text-[#6B7280]">IPBLI Foundation</p>
-                  <p className="text-sm text-[#6B7280]">South Extension Part II</p>
-                  <p className="text-sm text-[#6B7280]">New Delhi, 110049</p>
+                  <p className="text-sm text-[#6B7280]">IPBLI Foundation, New Delhi, India</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <div className="w-9 h-9 bg-[#C69C3F]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-[#C69C3F]" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-[#1A1A2E]">Phone</p>
+                  <p className="text-sm text-[#1E3A5F] hover:underline">+91 XXXXX XXXXX</p>
+                  <p className="text-xs text-[#6B7280] mt-0.5">Mon-Fri, 10 AM to 5 PM</p>
                 </div>
               </div>
             </div>
