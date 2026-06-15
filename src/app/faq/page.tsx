@@ -19,36 +19,36 @@ export default function FAQ() {
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
           <p className="text-xs text-[#C75B39] font-medium uppercase tracking-wider mb-3">Support</p>
-          <h1 className="text-3xl md:text-4xl font-medium text-foreground leading-tight tracking-tight mb-5">
+          <h1 className="text-3xl md:text-4xl font-medium text-[#1A1A2E] leading-tight tracking-tight mb-5">
             Frequently asked questions
           </h1>
-          <p className="text-base text-muted-foreground">
+          <p className="text-base text-[#6B7280]">
             Clear answers about how IPBLI works, who qualifies, and what to expect.
           </p>
         </div>
       </section>
 
-      <div className="border-t border-border" />
+      <div className="border-t border-[#e8e3db]" />
 
       {/* FAQ */}
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`item-${i}`} className="border-b border-border py-1">
-                <AccordionTrigger className="text-left text-sm font-medium text-foreground hover:text-[#1E3A5F] hover:no-underline py-4">
+              <AccordionItem key={i} value={`item-${i}`} className="border-b border-[#e8e3db] py-1">
+                <AccordionTrigger className="text-left text-sm font-medium text-[#1A1A2E] hover:text-[#1E3A5F] hover:no-underline py-4">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-5">
+                <AccordionContent className="text-sm text-[#6B7280] leading-relaxed pb-5">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
 
-          <div className="mt-12 pt-8 border-t border-border text-center">
-            <p className="text-sm font-medium text-foreground mb-2">Other Government Initiatives</p>
-            <p className="text-sm text-muted-foreground mb-4 max-w-md mx-auto">
+          <div className="mt-12 pt-8 border-t border-[#e8e3db] text-center">
+            <p className="text-sm font-medium text-[#1A1A2E] mb-2">Other Government Initiatives</p>
+            <p className="text-sm text-[#6B7280] mb-4 max-w-md mx-auto">
               If you do not meet our eligibility criteria or live outside our operational regions, you may still find help through these official Government of India portals:
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -65,8 +65,8 @@ export default function FAQ() {
               </a>
             </div>
             
-            <div className="pt-8 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-3">Still have questions?</p>
+            <div className="pt-8 border-t border-[#e8e3db]">
+              <p className="text-sm text-[#6B7280] mb-3">Still have questions?</p>
               <Link href="/contact" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline font-medium">
                 Contact our operations team <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </Link>

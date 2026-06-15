@@ -76,7 +76,7 @@ export default function SignUp() {
         </div>
 
         <Link href="/" className="absolute top-8 left-8 flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-background/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
+          <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
             <Scale className="w-4 h-4 text-[#C69C3F]" />
           </div>
           <span className="text-white/90 font-medium text-sm tracking-tight">IPBLI</span>
@@ -86,14 +86,14 @@ export default function SignUp() {
       {/* Right — Form */}
       <div className="w-full lg:w-1/2 flex flex-col">
         <div className="lg:hidden ns-bar" />
-        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-border">
+        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-[#e8e3db]">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-sm text-foreground">IPBLI</span>
+            <span className="font-medium text-sm text-[#1A1A2E]">IPBLI</span>
           </Link>
-          <Link href="/" className="text-xs text-muted-foreground hover:text-foreground">← Back to home</Link>
+          <Link href="/" className="text-xs text-[#6B7280] hover:text-[#1A1A2E]">← Back to home</Link>
         </div>
 
         <div className="flex-1 flex items-center justify-center px-6 py-10">
@@ -101,8 +101,8 @@ export default function SignUp() {
             {!success ? (
               <>
                 <div className="mb-6">
-                  <h1 className="text-2xl font-medium text-foreground mb-2">Create your account</h1>
-                  <p className="text-sm text-muted-foreground">
+                  <h1 className="text-2xl font-medium text-[#1A1A2E] mb-2">Create your account</h1>
+                  <p className="text-sm text-[#6B7280]">
                     Join IPBLI to access free legal representation.
                   </p>
                 </div>
@@ -116,11 +116,11 @@ export default function SignUp() {
                       className={`flex-1 text-left p-3 rounded-xl border transition-all duration-200 ${
                         role === r.id
                           ? "border-[#1E3A5F] bg-[#1E3A5F]/5"
-                          : "border-border hover:border-[#d4cfc7]"
+                          : "border-[#e8e3db] hover:border-[#d4cfc7]"
                       }`}
                     >
-                      <p className={`text-xs font-medium ${role === r.id ? "text-[#1E3A5F]" : "text-foreground"}`}>{r.label}</p>
-                      <p className="text-[10px] text-muted-foreground mt-0.5">{r.desc}</p>
+                      <p className={`text-xs font-medium ${role === r.id ? "text-[#1E3A5F]" : "text-[#1A1A2E]"}`}>{r.label}</p>
+                      <p className="text-[10px] text-[#6B7280] mt-0.5">{r.desc}</p>
                     </button>
                   ))}
                 </div>
@@ -128,45 +128,45 @@ export default function SignUp() {
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-3.5">
                   <div>
-                    <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Full name *</label>
+                    <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Full name *</label>
                     <Input value={form.name} onChange={(e) => update("name", e.target.value)}
                       placeholder="Enter your full name"
-                      className="bg-background border-border text-sm h-11 rounded-lg" />
+                      className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
                   </div>
 
                   <div>
-                    <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Email address *</label>
+                    <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Email address *</label>
                     <Input type="email" value={form.email} onChange={(e) => update("email", e.target.value)}
                       placeholder="you@example.com"
-                      className="bg-background border-border text-sm h-11 rounded-lg" />
+                      className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
                   </div>
 
                   <div>
-                    <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Phone number</label>
+                    <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Phone number</label>
                     <Input type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)}
                       placeholder="+91 98765 43210"
-                      className="bg-background border-border text-sm h-11 rounded-lg" />
+                      className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
                   </div>
 
                   <div>
-                    <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Password *</label>
+                    <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Password *</label>
                     <div className="relative">
                       <Input type={showPassword ? "text" : "password"} value={form.password}
                         onChange={(e) => update("password", e.target.value)}
                         placeholder="Minimum 8 characters"
-                        className="bg-background border-border text-sm h-11 rounded-lg pr-10" />
+                        className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg pr-10" />
                       <button type="button" onClick={() => setShowPassword(!showPassword)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground">
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6B7280] hover:text-[#1A1A2E]">
                         {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                       </button>
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Confirm password *</label>
+                    <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Confirm password *</label>
                     <Input type="password" value={form.confirm} onChange={(e) => update("confirm", e.target.value)}
                       placeholder="Re-enter your password"
-                      className="bg-background border-border text-sm h-11 rounded-lg" />
+                      className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
                   </div>
 
                   {error && (
@@ -184,7 +184,7 @@ export default function SignUp() {
                     </Button>
                   </div>
 
-                  <p className="text-[11px] text-muted-foreground text-center leading-relaxed">
+                  <p className="text-[11px] text-[#6B7280] text-center leading-relaxed">
                     By creating an account, you agree to our{" "}
                     <Link href="/terms" className="text-[#1E3A5F] hover:underline">Terms</Link>{" "}and{" "}
                     <Link href="/privacy" className="text-[#1E3A5F] hover:underline">Privacy Policy</Link>.
@@ -192,12 +192,12 @@ export default function SignUp() {
                 </form>
 
                 <div className="relative my-5">
-                  <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-border" /></div>
-                  <div className="relative flex justify-center"><span className="bg-background px-3 text-[11px] text-muted-foreground">or</span></div>
+                  <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-[#e8e3db]" /></div>
+                  <div className="relative flex justify-center"><span className="bg-white px-3 text-[11px] text-[#6B7280]">or</span></div>
                 </div>
 
                 <div className="text-center">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-[#6B7280]">
                     Already have an account?{" "}
                     <Link href="/signin" className="text-[#1E3A5F] font-medium hover:underline">Sign in</Link>
                   </p>
@@ -209,9 +209,9 @@ export default function SignUp() {
                 <div className="w-14 h-14 bg-[#5B8A72]/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
                   <CheckCircle2 className="w-7 h-7 text-[#5B8A72]" />
                 </div>
-                <h2 className="text-xl font-medium text-foreground mb-2">Account created</h2>
-                <p className="text-sm text-muted-foreground mb-8 max-w-xs mx-auto">
-                  Welcome to IPBLI, <span className="text-foreground font-medium">{form.name}</span>. You can now sign in and {role === "citizen" ? "apply for legal assistance" : "join our pro bono panel"}.
+                <h2 className="text-xl font-medium text-[#1A1A2E] mb-2">Account created</h2>
+                <p className="text-sm text-[#6B7280] mb-8 max-w-xs mx-auto">
+                  Welcome to IPBLI, <span className="text-[#1A1A2E] font-medium">{form.name}</span>. You can now sign in and {role === "citizen" ? "apply for legal assistance" : "join our pro bono panel"}.
                 </p>
                 <div className="flex flex-col gap-3">
                   <Link href="/signin">
@@ -219,7 +219,7 @@ export default function SignUp() {
                       Continue to sign in <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
-                  <Link href="/" className="text-xs text-muted-foreground hover:text-foreground">
+                  <Link href="/" className="text-xs text-[#6B7280] hover:text-[#1A1A2E]">
                     ← Back to home
                   </Link>
                 </div>

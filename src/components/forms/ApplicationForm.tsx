@@ -66,12 +66,12 @@ export function ApplicationForm() {
 
   if (isSubmitted) {
     return (
-      <div className="border border-border rounded-xl p-10 text-center">
+      <div className="border border-[#e8e3db] rounded-xl p-10 text-center">
         <div className="w-12 h-12 bg-[#5B8A72]/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <CheckCircle2 className="w-6 h-6 text-[#5B8A72]" />
         </div>
-        <h2 className="text-xl font-medium text-foreground mb-2">Application received</h2>
-        <p className="text-sm text-muted-foreground mb-6 max-w-sm mx-auto">
+        <h2 className="text-xl font-medium text-[#1A1A2E] mb-2">Application received</h2>
+        <p className="text-sm text-[#6B7280] mb-6 max-w-sm mx-auto">
           Our operations team will review your application within 3–5 business days. You will receive an SMS with your status.
         </p>
         <Button className="rounded-full bg-[#1E3A5F] hover:bg-[#2B5278] text-white text-sm px-6 h-9 shadow-none" onClick={() => window.location.href = "/"}>
@@ -85,8 +85,8 @@ export function ApplicationForm() {
   const stepColors = ["#1E3A5F", "#C75B39", "#C69C3F", "#5B8A72", "#1E3A5F", "#C75B39"];
   const stepIdx = step - 1;
 
-  const inputClass = "bg-background border-border text-foreground text-sm h-10 rounded-lg focus:ring-[#1E3A5F] focus:border-[#1E3A5F]";
-  const labelClass = "text-sm text-muted-foreground";
+  const inputClass = "bg-white border-[#e8e3db] text-[#1A1A2E] text-sm h-10 rounded-lg focus:ring-[#1E3A5F] focus:border-[#1E3A5F]";
+  const labelClass = "text-sm text-[#6B7280]";
 
   return (
     <div className="w-full">
@@ -102,11 +102,11 @@ export function ApplicationForm() {
         </div>
       </div>
 
-      <div className="border border-border rounded-xl overflow-hidden">
-        <div className="px-6 py-4 border-b border-border bg-muted">
+      <div className="border border-[#e8e3db] rounded-xl overflow-hidden">
+        <div className="px-6 py-4 border-b border-[#e8e3db] bg-[#F9F7F4]">
           <div className="flex items-center gap-2">
             <span className="w-6 h-6 rounded-full text-white text-xs flex items-center justify-center font-medium" style={{ background: stepColors[stepIdx] }}>{step}</span>
-            <h3 className="text-sm font-medium text-foreground">{steps[stepIdx]}</h3>
+            <h3 className="text-sm font-medium text-[#1A1A2E]">{steps[stepIdx]}</h3>
           </div>
         </div>
 
@@ -146,7 +146,7 @@ export function ApplicationForm() {
                       )} />
                     </div>
                     <FormField control={form.control} name="address" render={({ field }) => (
-                      <FormItem><FormLabel className={labelClass}>Full address</FormLabel><FormControl><Textarea className="bg-background border-border text-foreground text-sm rounded-lg resize-none h-20" placeholder="House No, Street, Locality..." {...field} /></FormControl><FormMessage /></FormItem>
+                      <FormItem><FormLabel className={labelClass}>Full address</FormLabel><FormControl><Textarea className="bg-white border-[#e8e3db] text-[#1A1A2E] text-sm rounded-lg resize-none h-20" placeholder="House No, Street, Locality..." {...field} /></FormControl><FormMessage /></FormItem>
                     )} />
                     <div className="grid grid-cols-2 gap-4">
                       <FormField control={form.control} name="state" render={({ field }) => (
@@ -198,30 +198,30 @@ export function ApplicationForm() {
                       <FormItem><FormLabel className={labelClass}>Brief title</FormLabel><FormControl><Input className={inputClass} placeholder="e.g. Need bail for false charge" {...field} /></FormControl><FormMessage /></FormItem>
                     )} />
                     <FormField control={form.control} name="caseDescription" render={({ field }) => (
-                      <FormItem><FormLabel className={labelClass}>Description</FormLabel><FormControl><Textarea className="bg-background border-border text-foreground text-sm rounded-lg resize-none h-28" placeholder="Explain what happened..." {...field} /></FormControl><FormMessage /></FormItem>
+                      <FormItem><FormLabel className={labelClass}>Description</FormLabel><FormControl><Textarea className="bg-white border-[#e8e3db] text-[#1A1A2E] text-sm rounded-lg resize-none h-28" placeholder="Explain what happened..." {...field} /></FormControl><FormMessage /></FormItem>
                     )} />
                   </motion.div>
                 )}
                 {step === 5 && (
                   <motion.div key="s5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                    <div className="border-2 border-dashed border-border rounded-xl p-10 text-center hover:border-[#1E3A5F] transition-colors cursor-pointer">
+                    <div className="border-2 border-dashed border-[#e8e3db] rounded-xl p-10 text-center hover:border-[#1E3A5F] transition-colors cursor-pointer">
                       <UploadCloud className="w-10 h-10 text-[#d4cfc7] mx-auto mb-3" />
-                      <p className="text-sm font-medium text-foreground mb-1">Upload documents</p>
-                      <p className="text-xs text-muted-foreground">FIR copy, income proof, or court notices (PDF, JPG, up to 10MB)</p>
+                      <p className="text-sm font-medium text-[#1A1A2E] mb-1">Upload documents</p>
+                      <p className="text-xs text-[#6B7280]">FIR copy, income proof, or court notices (PDF, JPG, up to 10MB)</p>
                     </div>
                   </motion.div>
                 )}
                 {step === 6 && (
                   <motion.div key="s6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                     <FormField control={form.control} name="consentTrue" render={({ field }) => (
-                      <div className="bg-primary/10 border border-[#1E3A5F]/15 p-5 rounded-xl">
+                      <div className="bg-[#1E3A5F]/8 border border-[#1E3A5F]/15 p-5 rounded-xl">
                         <div className="flex items-start gap-3">
                           <AlertCircle className="w-5 h-5 text-[#1E3A5F] shrink-0 mt-0.5" />
                           <div className="space-y-3">
-                            <p className="text-sm font-medium text-foreground">Declaration</p>
+                            <p className="text-sm font-medium text-[#1A1A2E]">Declaration</p>
                             <div className="flex items-start gap-3">
                               <Checkbox checked={field.value} onCheckedChange={field.onChange} className="mt-0.5" />
-                              <p className="text-xs text-muted-foreground leading-relaxed">
+                              <p className="text-xs text-[#6B7280] leading-relaxed">
                                 I declare that all information provided is true. I understand that false financial information will result in termination of legal aid.
                               </p>
                             </div>
@@ -234,9 +234,9 @@ export function ApplicationForm() {
                 )}
               </AnimatePresence>
 
-              <div className="mt-6 flex justify-between pt-4 border-t border-border">
+              <div className="mt-6 flex justify-between pt-4 border-t border-[#e8e3db]">
                 <Button type="button" variant="outline" onClick={prevStep} disabled={step === 1}
-                  className="rounded-full border-border text-muted-foreground hover:bg-gray-50 text-sm h-9 px-5 shadow-none">
+                  className="rounded-full border-[#e8e3db] text-[#6B7280] hover:bg-gray-50 text-sm h-9 px-5 shadow-none">
                   <ChevronLeft className="w-4 h-4 mr-1" /> Back
                 </Button>
                 {step < 6 ? (

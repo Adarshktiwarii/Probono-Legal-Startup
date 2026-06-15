@@ -6,7 +6,6 @@ import { Menu, X, Scale } from "lucide-react";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,13 +36,13 @@ export default function Header() {
     <>
       <div className="ns-bar" aria-hidden="true" />
 
-      <header className={`sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b transition-all duration-200 ${scrolled ? "shadow-sm border-border" : "border-transparent"}`}>
+      <header className={`sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b transition-all duration-200 ${scrolled ? "shadow-sm border-[#e8e3db]" : "border-transparent"}`}>
         <div className="container flex items-center justify-between h-14">
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center transition-transform group-hover:scale-105">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-[15px] text-foreground tracking-tight">IPBLI</span>
+            <span className="font-medium text-[15px] text-[#1A1A2E] tracking-tight">IPBLI</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-0.5">
@@ -55,8 +54,8 @@ export default function Header() {
                   href={link.href}
                   className={`px-3 py-1.5 text-[13px] rounded-full transition-colors ${
                     isActive
-                      ? "text-[#1E3A5F] bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      ? "text-[#1E3A5F] bg-[#1E3A5F]/8"
+                      : "text-[#6B7280] hover:text-[#1A1A2E] hover:bg-[#F9F7F4]"
                   }`}
                 >
                   {link.name}
@@ -66,10 +65,9 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             <Link
               href="/signin"
-              className="hidden md:inline-flex text-[13px] text-[#1E3A5F] hover:bg-primary/10 px-3 py-1.5 rounded-full transition-colors"
+              className="hidden md:inline-flex text-[13px] text-[#1E3A5F] hover:bg-[#1E3A5F]/8 px-3 py-1.5 rounded-full transition-colors"
             >
               Sign in
             </Link>
@@ -79,7 +77,7 @@ export default function Header() {
               </Button>
             </Link>
             <button
-              className="md:hidden p-2 text-muted-foreground hover:text-foreground -mr-2"
+              className="md:hidden p-2 text-[#6B7280] hover:text-[#1A1A2E] -mr-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -95,21 +93,21 @@ export default function Header() {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.15 }}
-              className="md:hidden border-t border-border bg-background overflow-hidden"
+              className="md:hidden border-t border-[#e8e3db] bg-white overflow-hidden"
             >
               <nav className="container py-3 flex flex-col gap-0.5">
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href;
                   return (
                     <Link key={link.href} href={link.href}
-                      className={`px-4 py-2.5 text-sm rounded-lg transition-colors ${isActive ? "text-[#1E3A5F] bg-primary/10" : "text-muted-foreground hover:bg-muted"}`}>
+                      className={`px-4 py-2.5 text-sm rounded-lg transition-colors ${isActive ? "text-[#1E3A5F] bg-[#1E3A5F]/8" : "text-[#6B7280] hover:bg-[#F9F7F4]"}`}>
                       {link.name}
                     </Link>
                   );
                 })}
-                <div className="flex flex-col gap-2 mt-3 pt-3 border-t border-border">
+                <div className="flex flex-col gap-2 mt-3 pt-3 border-t border-[#e8e3db]">
                   <Link href="/signin"
-                    className="text-sm text-[#1E3A5F] py-2.5 rounded-lg hover:bg-primary/10 transition-colors text-center">
+                    className="text-sm text-[#1E3A5F] py-2.5 rounded-lg hover:bg-[#1E3A5F]/8 transition-colors text-center">
                     Sign in
                   </Link>
                   <Link href="/apply">
