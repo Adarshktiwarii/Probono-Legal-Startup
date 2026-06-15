@@ -1,0 +1,38 @@
+export default function Terms() {
+  return (
+    <div className="py-16">
+      <div className="container max-w-2xl">
+        <h1 className="text-2xl font-medium text-[#1A1A2E] mb-2">Terms of Service</h1>
+        <p className="text-xs text-[#6B7280] mb-8">Last updated: June 2026</p>
+
+        <div className="space-y-8 text-sm text-[#6B7280] leading-relaxed">
+          <section>
+            <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Acceptance</h2>
+            <p>By using the NyayaSetu platform, you agree to these terms. NyayaSetu is a non-profit, pro bono legal aid organization. We are not a law firm and do not provide legal advice directly through this website.</p>
+          </section>
+
+          <div className="border-t border-[#e8e3db]" />
+
+          <section>
+            <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Eligibility</h2>
+            <p>Access to NyayaSetu's pro bono legal services is subject to eligibility criteria. Submitting an application does not guarantee legal representation. All decisions are made by the NyayaSetu Operations Team.</p>
+          </section>
+
+          <div className="border-t border-[#e8e3db]" />
+
+          <section>
+            <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Truthful Information</h2>
+            <p>Applicants must provide truthful and accurate information. Misrepresentation of financial status or case details will result in immediate termination of services.</p>
+          </section>
+
+          <div className="border-t border-[#e8e3db]" />
+
+          <section>
+            <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Contact</h2>
+            <p>Questions about these terms can be directed to <a href="mailto:admin@nyayasetu.org" className="text-[#1E3A5F] hover:underline">admin@nyayasetu.org</a>.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+}

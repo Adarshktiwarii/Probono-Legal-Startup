@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 234 20% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 234 20% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 234 20% 14%;
+
+    --primary: 213 53% 24%;      /* #1E3A5F Deep Sapphire */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 20% 40%;
+    --secondary-foreground: 234 20% 14%;
+
+    --muted: 40 20% 96%;
+    --muted-foreground: 220 5% 46%;
+
+    --accent: 40 20% 96%;
+    --accent-foreground: 234 20% 14%;
+
+    --destructive: 14 56% 50%;   /* #C75B39 Terracotta */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 10% 88%;
+    --input: 30 10% 88%;
+    --ring: 213 53% 24%;
+
+    --radius: 0.5rem;
+
+    /* NyayaSetu brand */
+    --ns-sapphire: #1E3A5F;
+    --ns-sapphire-light: #2B5278;
+    --ns-gold: #C69C3F;
+    --ns-gold-light: #D4AD5A;
+    --ns-sage: #5B8A72;
+    --ns-terracotta: #C75B39;
+    --ns-dark: #1A1A2E;
+    --ns-gray: #6B7280;
+    --ns-light: #F9F7F4;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white;
+    color: var(--ns-dark);
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 rounded-sm;
+    outline-color: var(--ns-sapphire);
+  }
+}
+
+/* NyayaSetu signature accent bar — sapphire to gold gradient */
+.ns-bar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--ns-sapphire) 0%, var(--ns-sapphire-light) 30%, var(--ns-gold) 65%, var(--ns-gold-light) 100%);
+}
+
+/* Subtle warm tint for sections */
+.ns-warm-bg {
+  background: var(--ns-light);
+}
