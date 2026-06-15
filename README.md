@@ -4,10 +4,11 @@ IPBLI is a modern, scalable SaaS platform built for Section 8 legal aid organiza
 
 ## Tech Stack
 - **Frontend**: Next.js 15 (App Router), React 19, Tailwind CSS v4, Shadcn UI
-- **Backend**: Next.js Server Actions, Supabase PostgreSQL
-- **Authentication**: Clerk
+- **Backend**: Next.js Server Actions
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Icons**: Lucide React
 - **AI**: OpenAI (gpt-4o-mini) for case summarization and urgency scoring
-- **Storage**: Supabase Storage
 
 ## Getting Started
 
@@ -29,11 +30,7 @@ IPBLI is a modern, scalable SaaS platform built for Section 8 legal aid organiza
    \`\`\`
 
 4. **Database Migration**
-   Apply the initial Supabase schema migrations:
    \`\`\`bash
-   cd supabase
-   supabase db push
-   # Alternatively, copy the SQL from supabase/migrations/0000_initial_schema.sql into your Supabase SQL Editor
    \`\`\`
 
 5. **Run Development Server**
@@ -43,7 +40,6 @@ IPBLI is a modern, scalable SaaS platform built for Section 8 legal aid organiza
 
 ## Security & Compliance
 - **RLS**: Row Level Security is enforced at the database level ensuring Advocates only see assigned cases and Citizens only see their own applications.
-- **RBAC**: Clerk is used to define roles (`ADMIN`, `ADVOCATE`, `BENEFICIARY`) which are synchronized with Supabase.
 - **AI Constraints**: OpenAI is strictly instructed NOT to provide legal advice, acting purely as an internal administrative assistant for triage.
 
 ## Production Deployment
