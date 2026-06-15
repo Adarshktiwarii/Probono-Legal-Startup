@@ -95,7 +95,7 @@ export default function ApplyPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A2E]/90 via-[#1A1A2E]/50 to-[#1A1A2E]/30" />
 
         <Link href="/" className="absolute top-8 left-8 flex items-center gap-2.5 group z-10">
-          <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
+          <div className="w-8 h-8 rounded-lg bg-background/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
             <Scale className="w-4 h-4 text-[#C69C3F]" />
           </div>
           <span className="text-white/90 font-medium text-sm">IPBLI</span>
@@ -106,14 +106,14 @@ export default function ApplyPage() {
           <div className="mb-6">
             <div className="flex gap-1.5 mb-3">
               {stepMeta.map((s) => (
-                <div key={s.num} className={`h-1 flex-1 rounded-full transition-colors ${step >= s.num ? "bg-[#C69C3F]" : "bg-white/20"}`} />
+                <div key={s.num} className={`h-1 flex-1 rounded-full transition-colors ${step >= s.num ? "bg-[#C69C3F]" : "bg-background/20"}`} />
               ))}
             </div>
             <p className="text-white/60 text-xs">Step {step} of {TOTAL_STEPS}</p>
           </div>
 
           {/* What happens next */}
-          <div className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl p-5 mb-5">
+          <div className="bg-background/10 backdrop-blur-sm border border-white/15 rounded-xl p-5 mb-5">
             <h3 className="text-white/90 text-sm font-medium mb-3 flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-[#C69C3F]" /> What happens next?
             </h3>
@@ -135,14 +135,14 @@ export default function ApplyPage() {
       <div className="w-full flex flex-col">
         {/* Mobile header */}
         <div className="lg:hidden ns-bar" />
-        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-[#e8e3db]">
+        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-border">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-sm text-[#1A1A2E]">IPBLI</span>
+            <span className="font-medium text-sm text-foreground">IPBLI</span>
           </Link>
-          <span className="text-xs text-[#6B7280]">Step {step}/{TOTAL_STEPS}</span>
+          <span className="text-xs text-muted-foreground">Step {step}/{TOTAL_STEPS}</span>
         </div>
 
         {/* Mobile progress */}
@@ -161,8 +161,8 @@ export default function ApplyPage() {
                 {/* Step header */}
                 <div className="mb-8">
                   <p className="text-xs text-[#C69C3F] font-medium uppercase tracking-wider mb-2">Step {current.num}</p>
-                  <h1 className="text-2xl font-medium text-[#1A1A2E] mb-1">{current.label}</h1>
-                  <p className="text-sm text-[#6B7280]">{current.sub}</p>
+                  <h1 className="text-2xl font-medium text-foreground mb-1">{current.label}</h1>
+                  <p className="text-sm text-muted-foreground">{current.sub}</p>
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -170,20 +170,20 @@ export default function ApplyPage() {
                   {step === 1 && (
                     <motion.div key="s1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Full name *</label>
-                        <Input value={form.fullName} onChange={(e) => set("fullName", e.target.value)} placeholder="Enter your full name" className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
+                        <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Full name *</label>
+                        <Input value={form.fullName} onChange={(e) => set("fullName", e.target.value)} placeholder="Enter your full name" className="bg-background border-border text-sm h-11 rounded-lg" />
                       </div>
                       <div className="grid grid-cols-2 gap-4">
                         <div>
-                          <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Age *</label>
-                          <Input type="number" min="1" max="120" value={form.age} onChange={(e) => set("age", e.target.value)} placeholder="e.g. 35" className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
+                          <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Age *</label>
+                          <Input type="number" min="1" max="120" value={form.age} onChange={(e) => set("age", e.target.value)} placeholder="e.g. 35" className="bg-background border-border text-sm h-11 rounded-lg" />
                         </div>
                         <div>
-                          <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Gender *</label>
+                          <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Gender *</label>
                           <div className="flex gap-2">
                             {["Male", "Female", "Other"].map((g) => (
                               <button key={g} type="button" onClick={() => set("gender", g)}
-                                className={`flex-1 h-11 rounded-lg text-xs border transition-all ${form.gender === g ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-[#e8e3db] text-[#6B7280] hover:border-[#d4cfc7]"}`}>
+                                className={`flex-1 h-11 rounded-lg text-xs border transition-all ${form.gender === g ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-border text-muted-foreground hover:border-[#d4cfc7]"}`}>
                                 {g}
                               </button>
                             ))}
@@ -192,12 +192,12 @@ export default function ApplyPage() {
                       </div>
                       <div className="grid grid-cols-2 gap-4">
                         <div>
-                          <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Phone number *</label>
-                          <Input type="tel" value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="+91 98765 43210" className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
+                          <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Phone number *</label>
+                          <Input type="tel" value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="+91 98765 43210" className="bg-background border-border text-sm h-11 rounded-lg" />
                         </div>
                         <div>
-                          <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Email <span className="text-[#d4cfc7]">(optional)</span></label>
-                          <Input type="email" value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@email.com" className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
+                          <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Email <span className="text-[#d4cfc7]">(optional)</span></label>
+                          <Input type="email" value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@email.com" className="bg-background border-border text-sm h-11 rounded-lg" />
                         </div>
                       </div>
                     </motion.div>
@@ -207,19 +207,19 @@ export default function ApplyPage() {
                   {step === 2 && (
                     <motion.div key="s2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-2 block font-medium">Which state are you in? *</label>
+                        <label className="text-xs text-muted-foreground mb-2 block font-medium">Which state are you in? *</label>
                         <div className="flex gap-3">
                           {states.map((s) => (
                             <button key={s.id} type="button" onClick={() => set("state", s.id)}
-                              className={`flex-1 p-4 rounded-xl border text-center transition-all ${form.state === s.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5" : "border-[#e8e3db] hover:border-[#d4cfc7]"}`}>
-                              <p className={`text-sm font-medium ${form.state === s.id ? "text-[#1E3A5F]" : "text-[#1A1A2E]"}`}>{s.label}</p>
+                              className={`flex-1 p-4 rounded-xl border text-center transition-all ${form.state === s.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5" : "border-border hover:border-[#d4cfc7]"}`}>
+                              <p className={`text-sm font-medium ${form.state === s.id ? "text-[#1E3A5F]" : "text-foreground"}`}>{s.label}</p>
                             </button>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">City / District *</label>
-                        <Input value={form.city} onChange={(e) => set("city", e.target.value)} placeholder="e.g. South Delhi, Bhopal, Jabalpur" className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg" />
+                        <label className="text-xs text-muted-foreground mb-1.5 block font-medium">City / District *</label>
+                        <Input value={form.city} onChange={(e) => set("city", e.target.value)} placeholder="e.g. South Delhi, Bhopal, Jabalpur" className="bg-background border-border text-sm h-11 rounded-lg" />
                       </div>
                     </motion.div>
                   )}
@@ -228,49 +228,49 @@ export default function ApplyPage() {
                   {step === 3 && (
                     <motion.div key="s3" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-5">
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-2 block font-medium">What kind of case is this? *</label>
+                        <label className="text-xs text-muted-foreground mb-2 block font-medium">What kind of case is this? *</label>
                         <div className="grid grid-cols-2 gap-2">
                           {caseTypes.map((c) => (
                             <button key={c.id} type="button" onClick={() => set("caseType", c.id)}
-                              className={`text-left p-3 rounded-lg border text-xs transition-all ${form.caseType === c.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-[#e8e3db] text-[#6B7280] hover:border-[#d4cfc7]"}`}>
+                              className={`text-left p-3 rounded-lg border text-xs transition-all ${form.caseType === c.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-border text-muted-foreground hover:border-[#d4cfc7]"}`}>
                               {c.label}
                             </button>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-2 block font-medium">What stage is this case at? *</label>
+                        <label className="text-xs text-muted-foreground mb-2 block font-medium">What stage is this case at? *</label>
                         <div className="space-y-2">
                           {caseStages.map((s) => (
                             <button key={s.id} type="button" onClick={() => set("caseStage", s.id)}
-                              className={`w-full text-left p-3 rounded-lg border text-xs transition-all ${form.caseStage === s.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-[#e8e3db] text-[#6B7280] hover:border-[#d4cfc7]"}`}>
+                              className={`w-full text-left p-3 rounded-lg border text-xs transition-all ${form.caseStage === s.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-border text-muted-foreground hover:border-[#d4cfc7]"}`}>
                               {s.label}
                             </button>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Tell us what happened *</label>
+                        <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Tell us what happened *</label>
                         <p className="text-[11px] text-[#d4cfc7] mb-2">Write freely in your own words. No legal language needed.</p>
                         <Textarea value={form.caseDescription} onChange={(e) => set("caseDescription", e.target.value)}
                           placeholder="Describe your situation — what happened, when, and what help you need..."
-                          className="bg-white border-[#e8e3db] text-sm rounded-lg resize-none h-28" />
+                          className="bg-background border-border text-sm rounded-lg resize-none h-28" />
                       </div>
                       <div className="grid grid-cols-2 gap-4">
                         <div>
-                          <label className="text-xs text-[#6B7280] mb-2 block font-medium">Do you have a lawyer currently?</label>
+                          <label className="text-xs text-muted-foreground mb-2 block font-medium">Do you have a lawyer currently?</label>
                           <div className="flex gap-2">
                             {["No", "Yes"].map((v) => (
                               <button key={v} type="button" onClick={() => set("hasLawyer", v)}
-                                className={`flex-1 h-10 rounded-lg text-xs border transition-all ${form.hasLawyer === v ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-[#e8e3db] text-[#6B7280]"}`}>
+                                className={`flex-1 h-10 rounded-lg text-xs border transition-all ${form.hasLawyer === v ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-border text-muted-foreground"}`}>
                                 {v}
                               </button>
                             ))}
                           </div>
                         </div>
                         <div>
-                          <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Next hearing date <span className="text-[#d4cfc7]">(if any)</span></label>
-                          <Input type="date" value={form.hearingDate} onChange={(e) => set("hearingDate", e.target.value)} className="bg-white border-[#e8e3db] text-sm h-10 rounded-lg" />
+                          <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Next hearing date <span className="text-[#d4cfc7]">(if any)</span></label>
+                          <Input type="date" value={form.hearingDate} onChange={(e) => set("hearingDate", e.target.value)} className="bg-background border-border text-sm h-10 rounded-lg" />
                         </div>
                       </div>
                     </motion.div>
@@ -280,19 +280,19 @@ export default function ApplyPage() {
                   {step === 4 && (
                     <motion.div key="s4" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-5">
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-2 block font-medium">Annual household income *</label>
+                        <label className="text-xs text-muted-foreground mb-2 block font-medium">Annual household income *</label>
                         <div className="space-y-2">
                           {incomeRanges.map((r) => (
                             <button key={r.id} type="button" onClick={() => set("income", r.id)}
-                              className={`w-full text-left p-3.5 rounded-lg border text-sm transition-all ${form.income === r.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-[#e8e3db] text-[#6B7280] hover:border-[#d4cfc7]"}`}>
+                              className={`w-full text-left p-3.5 rounded-lg border text-sm transition-all ${form.income === r.id ? "border-[#1E3A5F] bg-[#1E3A5F]/5 text-[#1E3A5F] font-medium" : "border-border text-muted-foreground hover:border-[#d4cfc7]"}`}>
                               {r.label}
                             </button>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Number of dependents</label>
-                        <Input type="number" min="0" value={form.dependents} onChange={(e) => set("dependents", e.target.value)} placeholder="e.g. 3" className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg max-w-[120px]" />
+                        <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Number of dependents</label>
+                        <Input type="number" min="0" value={form.dependents} onChange={(e) => set("dependents", e.target.value)} placeholder="e.g. 3" className="bg-background border-border text-sm h-11 rounded-lg max-w-[120px]" />
                       </div>
                     </motion.div>
                   )}
@@ -300,7 +300,7 @@ export default function ApplyPage() {
                   {/* Step 5: Review & Submit */}
                   {step === 5 && (
                     <motion.div key="s5" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-5">
-                      <div className="border border-[#e8e3db] rounded-xl divide-y divide-[#e8e3db] text-sm">
+                      <div className="border border-border rounded-xl divide-y divide-[#e8e3db] text-sm">
                         {[
                           { label: "Name", value: form.fullName },
                           { label: "Age / Gender", value: `${form.age} yrs, ${form.gender}` },
@@ -311,24 +311,24 @@ export default function ApplyPage() {
                           { label: "Income", value: incomeRanges.find(r => r.id === form.income)?.label || form.income },
                         ].map((row) => (
                           <div key={row.label} className="flex justify-between px-4 py-3">
-                            <span className="text-[#6B7280]">{row.label}</span>
-                            <span className="text-[#1A1A2E] font-medium text-right">{row.value}</span>
+                            <span className="text-muted-foreground">{row.label}</span>
+                            <span className="text-foreground font-medium text-right">{row.value}</span>
                           </div>
                         ))}
                       </div>
 
                       {form.caseDescription && (
-                        <div className="border border-[#e8e3db] rounded-xl p-4">
-                          <p className="text-xs text-[#6B7280] mb-1">Your description</p>
-                          <p className="text-sm text-[#1A1A2E] leading-relaxed">{form.caseDescription}</p>
+                        <div className="border border-border rounded-xl p-4">
+                          <p className="text-xs text-muted-foreground mb-1">Your description</p>
+                          <p className="text-sm text-foreground leading-relaxed">{form.caseDescription}</p>
                         </div>
                       )}
 
                       <div className="bg-[#1E3A5F]/5 border border-[#1E3A5F]/15 p-4 rounded-xl">
                         <label className="flex items-start gap-3 cursor-pointer">
                           <input type="checkbox" checked={form.consent} onChange={(e) => set("consent", e.target.checked)}
-                            className="mt-0.5 w-4 h-4 rounded border-[#e8e3db] text-[#1E3A5F] focus:ring-[#1E3A5F]" />
-                          <span className="text-xs text-[#6B7280] leading-relaxed">
+                            className="mt-0.5 w-4 h-4 rounded border-border text-[#1E3A5F] focus:ring-[#1E3A5F]" />
+                          <span className="text-xs text-muted-foreground leading-relaxed">
                             I declare that all information provided is true and accurate. I understand that misrepresentation of financial status will result in immediate termination of legal aid services.
                           </span>
                         </label>
@@ -340,11 +340,11 @@ export default function ApplyPage() {
                 {/* Navigation */}
                 <div className="mt-8 flex justify-between items-center">
                   {step > 1 ? (
-                    <button onClick={() => setStep((s) => s - 1)} className="flex items-center gap-1 text-sm text-[#6B7280] hover:text-[#1A1A2E] transition-colors">
+                    <button onClick={() => setStep((s) => s - 1)} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
                       <ArrowLeft className="w-4 h-4" /> Back
                     </button>
                   ) : (
-                    <Link href="/" className="text-sm text-[#6B7280] hover:text-[#1A1A2E]">← Home</Link>
+                    <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">← Home</Link>
                   )}
 
                   {step < TOTAL_STEPS ? (
@@ -366,12 +366,12 @@ export default function ApplyPage() {
                 <div className="w-16 h-16 bg-[#5B8A72]/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
                   <CheckCircle2 className="w-8 h-8 text-[#5B8A72]" />
                 </div>
-                <h2 className="text-2xl font-medium text-[#1A1A2E] mb-2">Application received</h2>
-                <p className="text-sm text-[#6B7280] mb-3 max-w-sm mx-auto">
-                  Thank you, <span className="text-[#1A1A2E] font-medium">{form.fullName}</span>. Your case has been registered with our operations team.
+                <h2 className="text-2xl font-medium text-foreground mb-2">Application received</h2>
+                <p className="text-sm text-muted-foreground mb-3 max-w-sm mx-auto">
+                  Thank you, <span className="text-foreground font-medium">{form.fullName}</span>. Your case has been registered with our operations team.
                 </p>
-                <p className="text-xs text-[#6B7280] mb-8 max-w-sm mx-auto">
-                  You will receive an SMS on <span className="text-[#1A1A2E] font-medium">{form.phone}</span> within 3–5 business days with your case status and next steps.
+                <p className="text-xs text-muted-foreground mb-8 max-w-sm mx-auto">
+                  You will receive an SMS on <span className="text-foreground font-medium">{form.phone}</span> within 3–5 business days with your case status and next steps.
                 </p>
                 <div className="flex flex-col gap-3 items-center">
                   <Button onClick={() => router.push("/")} className="rounded-full bg-[#1E3A5F] hover:bg-[#2B5278] text-white h-11 px-7 text-sm shadow-none">

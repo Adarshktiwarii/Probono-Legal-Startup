@@ -9,16 +9,16 @@ export default function About() {
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
           <p className="text-xs text-[#1E3A5F] font-medium uppercase tracking-wider mb-3">About IPBLI</p>
-          <h1 className="text-3xl md:text-4xl font-medium text-[#1A1A2E] leading-tight tracking-tight mb-5">
+          <h1 className="text-3xl md:text-4xl font-medium text-foreground leading-tight tracking-tight mb-5">
             An institution built for justice, not profit.
           </h1>
-          <p className="text-base text-[#6B7280] leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed">
             IPBLI is a registered Section 8 non-profit organization established to ensure that no eligible citizen is denied justice due to financial constraints. We provide free legal representation through our own institutional framework.
           </p>
         </div>
       </section>
 
-      <div className="border-t border-[#e8e3db]" />
+      <div className="border-t border-border" />
 
       {/* Image strip */}
       <section className="relative h-[240px] md:h-[320px]">
@@ -26,13 +26,13 @@ export default function About() {
         <div className="absolute inset-0 bg-black/20" />
       </section>
 
-      <div className="border-t border-[#e8e3db]" />
+      <div className="border-t border-border" />
 
       {/* Why we exist */}
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
-          <h2 className="text-xl font-medium text-[#1A1A2E] mb-5">Why we exist</h2>
-          <div className="space-y-4 text-sm text-[#6B7280] leading-relaxed">
+          <h2 className="text-xl font-medium text-foreground mb-5">Why we exist</h2>
+          <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
             <p>India promises justice to every citizen. Yet for millions, justice remains inaccessible — not because the law does not exist, but because access to legal representation remains financially out of reach.</p>
             <p>A right that cannot be defended is a right that effectively does not exist.</p>
             <p>IPBLI is not a legal marketplace. We are not a lawyer discovery platform. We are not a referral service. We are a pro bono legal representation organization that directly provides legal assistance to eligible citizens through our empaneled network of advocates.</p>
@@ -40,26 +40,26 @@ export default function About() {
         </div>
       </section>
 
-      <div className="border-t border-[#e8e3db]" />
+      <div className="border-t border-border" />
 
       {/* Core belief */}
-      <section className="py-16 md:py-20 bg-[#F9F7F4]">
+      <section className="py-16 md:py-20 bg-muted">
         <div className="container max-w-3xl">
           <div className="border-l-4 border-l-[#1E3A5F] pl-6 py-2">
-            <p className="text-lg text-[#1A1A2E] leading-relaxed italic">
+            <p className="text-lg text-foreground leading-relaxed italic">
               &ldquo;Justice should not be determined by wealth. The ability to defend one&apos;s rights should never depend upon the ability to pay. Legal representation should not be a privilege reserved for those with financial means.&rdquo;
             </p>
-            <p className="text-xs text-[#6B7280] mt-3">— IPBLI Founding Charter</p>
+            <p className="text-xs text-muted-foreground mt-3">— IPBLI Founding Charter</p>
           </div>
         </div>
       </section>
 
-      <div className="border-t border-[#e8e3db]" />
+      <div className="border-t border-border" />
 
       {/* Institutional pillars */}
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
-          <h2 className="text-xl font-medium text-[#1A1A2E] mb-8">Institutional pillars</h2>
+          <h2 className="text-xl font-medium text-foreground mb-8">Institutional pillars</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               { color: "#1E3A5F", title: "Representation", desc: "Provide legal representation through empaneled, high-caliber advocates who are committed to public service." },
@@ -70,8 +70,8 @@ export default function About() {
               <div key={pillar.title} className="flex gap-4">
                 <span className="w-2.5 h-2.5 rounded-full mt-1 shrink-0" style={{ background: pillar.color }} />
                 <div>
-                  <h3 className="text-sm font-medium text-[#1A1A2E] mb-1">{pillar.title}</h3>
-                  <p className="text-sm text-[#6B7280] leading-relaxed">{pillar.desc}</p>
+                  <h3 className="text-sm font-medium text-foreground mb-1">{pillar.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{pillar.desc}</p>
                 </div>
               </div>
             ))}
@@ -79,12 +79,12 @@ export default function About() {
         </div>
       </section>
 
-      <div className="border-t border-[#e8e3db]" />
+      <div className="border-t border-border" />
 
       {/* Theory of change */}
-      <section className="py-16 md:py-20 bg-[#F9F7F4]">
+      <section className="py-16 md:py-20 bg-muted">
         <div className="container max-w-3xl">
-          <h2 className="text-xl font-medium text-[#1A1A2E] mb-6">Theory of change</h2>
+          <h2 className="text-xl font-medium text-foreground mb-6">Theory of change</h2>
           <div className="space-y-4">
             {[
               "If eligible citizens receive representation, then rights can be defended.",
@@ -93,7 +93,7 @@ export default function About() {
             ].map((point, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="w-6 h-6 rounded-full bg-[#1E3A5F] text-white text-xs flex items-center justify-center font-medium shrink-0 mt-0.5">{i + 1}</span>
-                <p className="text-sm text-[#6B7280] leading-relaxed">{point}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{point}</p>
               </div>
             ))}
           </div>
@@ -101,13 +101,13 @@ export default function About() {
         </div>
       </section>
 
-      <div className="border-t border-[#e8e3db]" />
+      <div className="border-t border-border" />
 
       {/* North star */}
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
-          <h2 className="text-xl font-medium text-[#1A1A2E] mb-4">Our north star</h2>
-          <p className="text-sm text-[#6B7280] leading-relaxed mb-6">
+          <h2 className="text-xl font-medium text-foreground mb-4">Our north star</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">
             No eligible citizen should be denied justice because they cannot afford legal representation. Everything we build, every partnership we form, every decision we make, and every case we accept will be guided by this principle.
           </p>
           <Link href="/apply" className="inline-flex items-center text-sm text-[#1E3A5F] hover:underline">

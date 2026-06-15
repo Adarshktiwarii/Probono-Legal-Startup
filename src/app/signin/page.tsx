@@ -72,7 +72,7 @@ export default function SignIn() {
 
         {/* IPBLI branding */}
         <Link href="/" className="absolute top-8 left-8 flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
+          <div className="w-8 h-8 rounded-lg bg-background/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
             <Scale className="w-4 h-4 text-[#C69C3F]" />
           </div>
           <span className="text-white/90 font-medium text-sm tracking-tight">IPBLI</span>
@@ -83,14 +83,14 @@ export default function SignIn() {
       <div className="w-full lg:w-1/2 flex flex-col">
         {/* Mobile header */}
         <div className="lg:hidden ns-bar" />
-        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-[#e8e3db]">
+        <div className="lg:hidden flex items-center justify-between px-6 py-4 border-b border-border">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-sm text-[#1A1A2E]">IPBLI</span>
+            <span className="font-medium text-sm text-foreground">IPBLI</span>
           </Link>
-          <Link href="/" className="text-xs text-[#6B7280] hover:text-[#1A1A2E]">
+          <Link href="/" className="text-xs text-muted-foreground hover:text-foreground">
             ← Back to home
           </Link>
         </div>
@@ -99,14 +99,14 @@ export default function SignIn() {
           <div className="w-full max-w-sm">
             {/* Header */}
             <div className="mb-8">
-              <h1 className="text-2xl font-medium text-[#1A1A2E] mb-2">Welcome back</h1>
-              <p className="text-sm text-[#6B7280]">
+              <h1 className="text-2xl font-medium text-foreground mb-2">Welcome back</h1>
+              <p className="text-sm text-muted-foreground">
                 Sign in to your IPBLI account to continue.
               </p>
             </div>
 
             {/* Role selector */}
-            <div className="flex gap-1 p-1 bg-[#F9F7F4] rounded-full mb-6 border border-[#e8e3db]">
+            <div className="flex gap-1 p-1 bg-muted rounded-full mb-6 border border-border">
               {roles.map((r) => (
                 <button
                   key={r.id}
@@ -114,7 +114,7 @@ export default function SignIn() {
                   className={`flex-1 text-xs py-2 rounded-full transition-all duration-200 ${
                     role === r.id
                       ? "bg-[#1E3A5F] text-white shadow-sm"
-                      : "text-[#6B7280] hover:text-[#1A1A2E]"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {r.label}
@@ -130,19 +130,19 @@ export default function SignIn() {
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="text-xs text-[#6B7280] mb-1.5 block font-medium">Email address</label>
+                <label className="text-xs text-muted-foreground mb-1.5 block font-medium">Email address</label>
                 <Input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
-                  className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg focus:border-[#1E3A5F] focus:ring-[#1E3A5F]"
+                  className="bg-background border-border text-sm h-11 rounded-lg focus:border-[#1E3A5F] focus:ring-[#1E3A5F]"
                 />
               </div>
 
               <div>
                 <div className="flex justify-between items-center mb-1.5">
-                  <label className="text-xs text-[#6B7280] font-medium">Password</label>
+                  <label className="text-xs text-muted-foreground font-medium">Password</label>
                   <button type="button" className="text-[11px] text-[#1E3A5F] hover:underline">
                     Forgot password?
                   </button>
@@ -153,12 +153,12 @@ export default function SignIn() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter your password"
-                    className="bg-white border-[#e8e3db] text-sm h-11 rounded-lg pr-10 focus:border-[#1E3A5F] focus:ring-[#1E3A5F]"
+                    className="bg-background border-border text-sm h-11 rounded-lg pr-10 focus:border-[#1E3A5F] focus:ring-[#1E3A5F]"
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6B7280] hover:text-[#1A1A2E]"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
                   >
                     {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                   </button>
@@ -184,13 +184,13 @@ export default function SignIn() {
 
             {/* Divider */}
             <div className="relative my-6">
-              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-[#e8e3db]" /></div>
-              <div className="relative flex justify-center"><span className="bg-white px-3 text-[11px] text-[#6B7280]">or</span></div>
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-border" /></div>
+              <div className="relative flex justify-center"><span className="bg-background px-3 text-[11px] text-muted-foreground">or</span></div>
             </div>
 
             {/* Sign up link */}
             <div className="text-center">
-              <p className="text-sm text-[#6B7280]">
+              <p className="text-sm text-muted-foreground">
                 Don&apos;t have an account?{" "}
                 <Link href="/signup" className="text-[#1E3A5F] font-medium hover:underline">
                   Create one
@@ -199,7 +199,7 @@ export default function SignIn() {
             </div>
 
             {/* Demo badge */}
-            <div className="mt-8 pt-6 border-t border-[#e8e3db] text-center">
+            <div className="mt-8 pt-6 border-t border-border text-center">
               <span className="text-[10px] text-[#C69C3F] bg-[#C69C3F]/10 px-3 py-1 rounded-full border border-[#C69C3F]/15">
                 Demo Mode — Use any email and password to explore
               </span>

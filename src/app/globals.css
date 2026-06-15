@@ -45,6 +45,41 @@
     --ns-gray: #6B7280;
     --ns-light: #F9F7F4;
   }
+  
+  .dark {
+    --background: 222 47% 7%; /* Very dark navy #0A0F1A */
+    --foreground: 0 0% 98%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 213 53% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 20% 40%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 222 47% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 14 56% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 213 53% 24%;
+
+    /* Update IPBLI variables for dark mode */
+    --ns-dark: #FFFFFF;
+    --ns-gray: #9CA3AF;
+    --ns-light: #111827; /* Dark background */
+  }
 }
 
 @layer base {
@@ -55,8 +90,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white;
-    color: var(--ns-dark);
+    @apply bg-background text-foreground;
     font-feature-settings: "kern" 1, "liga" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

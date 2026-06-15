@@ -9,7 +9,7 @@ export default function Footer() {
   if (pathname?.startsWith("/admin") || pathname?.startsWith("/advocate") || pathname?.startsWith("/signin") || pathname?.startsWith("/signup") || pathname?.startsWith("/apply")) return null;
 
   return (
-    <footer className="border-t border-[#e8e3db] bg-[#F9F7F4]">
+    <footer className="border-t border-border bg-muted">
       <div className="container py-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
           <div className="col-span-2 md:col-span-2">
@@ -17,16 +17,16 @@ export default function Footer() {
               <div className="w-6 h-6 bg-[#1E3A5F] rounded-md flex items-center justify-center">
                 <Scale className="w-3 h-3 text-[#C69C3F]" />
               </div>
-              <span className="text-sm font-medium text-[#1A1A2E]">IPBLI</span>
+              <span className="text-sm font-medium text-foreground">IPBLI</span>
             </Link>
-            <p className="text-xs text-[#6B7280] leading-relaxed pr-8">
+            <p className="text-xs text-muted-foreground leading-relaxed pr-8">
               A Section 8 non-profit providing free legal representation to eligible citizens across India.
             </p>
           </div>
 
           <div>
-            <h4 className="text-[11px] font-medium text-[#1A1A2E] uppercase tracking-wider mb-3">Services</h4>
-            <ul className="space-y-2 text-xs text-[#6B7280]">
+            <h4 className="text-[11px] font-medium text-foreground uppercase tracking-wider mb-3">Services</h4>
+            <ul className="space-y-2 text-xs text-muted-foreground">
               <li><Link href="/apply" className="hover:text-[#1E3A5F] transition-colors">Apply for Aid</Link></li>
               <li><Link href="/eligibility" className="hover:text-[#1E3A5F] transition-colors">Eligibility</Link></li>
               <li><Link href="/faq" className="hover:text-[#1E3A5F] transition-colors">FAQ</Link></li>
@@ -34,8 +34,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[11px] font-medium text-[#1A1A2E] uppercase tracking-wider mb-3">Organization</h4>
-            <ul className="space-y-2 text-xs text-[#6B7280]">
+            <h4 className="text-[11px] font-medium text-foreground uppercase tracking-wider mb-3">Organization</h4>
+            <ul className="space-y-2 text-xs text-muted-foreground">
               <li><Link href="/about" className="hover:text-[#1E3A5F] transition-colors">About</Link></li>
               <li><Link href="/volunteer" className="hover:text-[#1E3A5F] transition-colors">Volunteer</Link></li>
               <li><Link href="/donate" className="hover:text-[#1E3A5F] transition-colors">Donate</Link></li>
@@ -43,8 +43,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[11px] font-medium text-[#1A1A2E] uppercase tracking-wider mb-3">Govt Initiatives</h4>
-            <ul className="space-y-2 text-xs text-[#6B7280]">
+            <h4 className="text-[11px] font-medium text-foreground uppercase tracking-wider mb-3">Govt Initiatives</h4>
+            <ul className="space-y-2 text-xs text-muted-foreground">
               <li><a href="https://tele-law.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E3A5F] transition-colors">Tele-Law</a></li>
               <li><a href="https://probono-doj.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E3A5F] transition-colors">Nyaya Bandhu</a></li>
               <li><a href="https://ecourts.gov.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E3A5F] transition-colors">eCourts India</a></li>
@@ -52,8 +52,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[11px] font-medium text-[#1A1A2E] uppercase tracking-wider mb-3">Legal</h4>
-            <ul className="space-y-2 text-xs text-[#6B7280]">
+            <h4 className="text-[11px] font-medium text-foreground uppercase tracking-wider mb-3">Legal</h4>
+            <ul className="space-y-2 text-xs text-muted-foreground">
               <li><Link href="/privacy" className="hover:text-[#1E3A5F] transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-[#1E3A5F] transition-colors">Terms of Service</Link></li>
               <li><Link href="/contact" className="hover:text-[#1E3A5F] transition-colors">Contact Us</Link></li>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-5 border-t border-[#e8e3db] flex flex-col md:flex-row justify-between items-center gap-2 text-[11px] text-[#6B7280]">
+        <div className="pt-5 border-t border-border flex flex-col md:flex-row justify-between items-center gap-2 text-[11px] text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} IPBLI Foundation. All rights reserved.</p>
           <p>Registered Section 8 Non-Profit · New Delhi, India</p>
         </div>
