@@ -3,10 +3,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowRight } from "lucide-react";
 
 const faqs = [
-  { q: "Is NyayaSetu a government organization?", a: "No. NyayaSetu is an independent, non-governmental, Section 8 non-profit organization registered under the Companies Act, 2013. However, our objectives align closely with the constitutional mandate under Article 39A, which directs the State to provide free legal aid to ensure that opportunities for securing justice are not denied to any citizen." },
-  { q: "How much does the legal representation cost?", a: "Absolutely nothing. If your application is approved through our eligibility screening, all advocate professional fees are covered pro bono. You do not pay NyayaSetu, nor do you pay the assigned advocate. There are no hidden charges or future obligations." },
-  { q: "Can I choose my own advocate?", a: "No. To maintain institutional integrity and ensure the equitable distribution of pro bono cases, the NyayaSetu Operations Team assigns advocates based on their domain expertise, availability, geographic jurisdiction, and the specific nature of your case." },
-  { q: "What happens if I provide false financial information?", a: "All applications require a signed declaration of financial need. If we discover that an applicant has misrepresented their income or financial status to secure free services, NyayaSetu reserves the right to immediately terminate the legal engagement and report the misrepresentation to relevant authorities." },
+  { q: "Is IPBLI a government organization?", a: "No. IPBLI is an independent, non-governmental, Section 8 non-profit organization registered under the Companies Act, 2013. However, our objectives align closely with the constitutional mandate under Article 39A, which directs the State to provide free legal aid to ensure that opportunities for securing justice are not denied to any citizen." },
+  { q: "How much does the legal representation cost?", a: "Absolutely nothing. If your application is approved through our eligibility screening, all advocate professional fees are covered pro bono. You do not pay IPBLI, nor do you pay the assigned advocate. There are no hidden charges or future obligations." },
+  { q: "Can I choose my own advocate?", a: "No. To maintain institutional integrity and ensure the equitable distribution of pro bono cases, the IPBLI Operations Team assigns advocates based on their domain expertise, availability, geographic jurisdiction, and the specific nature of your case." },
+  { q: "What happens if I provide false financial information?", a: "All applications require a signed declaration of financial need. If we discover that an applicant has misrepresented their income or financial status to secure free services, IPBLI reserves the right to immediately terminate the legal engagement and report the misrepresentation to relevant authorities." },
   { q: "Do you handle property or commercial disputes?", a: "Generally, no. Our resources are strictly reserved for matters concerning fundamental rights, wrongful detention, domestic abuse, senior citizen protection, and severe exploitation. We do not accept commercial, corporate, tax, or real estate disputes." },
   { q: "How long does the eligibility review take?", a: "Our operations team typically completes the eligibility review within 3–5 business days of receiving a complete application. Incomplete applications or those requiring additional documentation may take longer. You will receive an SMS notification about your status." },
   { q: "Which regions do you currently serve?", a: "Phase 1 operations cover Delhi NCR and select districts in Madhya Pradesh. We plan to expand to additional states in Phase 2, targeted for Q4 2026. Check our website for updates on regional availability." },
@@ -23,7 +23,7 @@ export default function FAQ() {
             Frequently asked questions
           </h1>
           <p className="text-base text-[#6B7280]">
-            Clear answers about how NyayaSetu works, who qualifies, and what to expect.
+            Clear answers about how IPBLI works, who qualifies, and what to expect.
           </p>
         </div>
       </section>

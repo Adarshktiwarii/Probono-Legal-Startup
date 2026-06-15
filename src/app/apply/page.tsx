@@ -98,7 +98,7 @@ export default function ApplyPage() {
           <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
             <Scale className="w-4 h-4 text-[#C69C3F]" />
           </div>
-          <span className="text-white/90 font-medium text-sm">NyayaSetu</span>
+          <span className="text-white/90 font-medium text-sm">IPBLI</span>
         </Link>
 
         <div className="absolute bottom-0 left-0 right-0 p-8 z-10">
@@ -140,7 +140,7 @@ export default function ApplyPage() {
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-sm text-[#1A1A2E]">NyayaSetu</span>
+            <span className="font-medium text-sm text-[#1A1A2E]">IPBLI</span>
           </Link>
           <span className="text-xs text-[#6B7280]">Step {step}/{TOTAL_STEPS}</span>
         </div>

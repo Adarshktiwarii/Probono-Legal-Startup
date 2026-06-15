@@ -13,7 +13,7 @@ export default function Volunteer() {
             Empanel as a pro bono advocate
           </h1>
           <p className="text-base text-[#6B7280] leading-relaxed">
-            NyayaSetu maintains a carefully curated panel of ethical, qualified advocates committed to representing citizens who cannot afford private counsel.
+            IPBLI maintains a carefully curated panel of ethical, qualified advocates committed to representing citizens who cannot afford private counsel.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function Volunteer() {
         <div className="container max-w-3xl">
           <h2 className="text-xl font-medium text-[#1A1A2E] mb-4">Why join our panel?</h2>
           <div className="space-y-3 text-sm text-[#6B7280] leading-relaxed">
-            <p>Most legal technology platforms help users find lawyers for a fee. NyayaSetu does not operate a marketplace. We coordinate representation for indigent citizens who genuinely cannot afford private counsel.</p>
+            <p>Most legal technology platforms help users find lawyers for a fee. IPBLI does not operate a marketplace. We coordinate representation for indigent citizens who genuinely cannot afford private counsel.</p>
             <p>By joining our panel, you maintain your full professional independence while we handle case intake, eligibility screening, document collection, and impact reporting. You focus on what you do best — advocating for your client, and get paid what you are worth while doing it.</p>
           </div>
         </div>

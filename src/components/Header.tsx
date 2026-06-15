@@ -42,7 +42,7 @@ export default function Header() {
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center transition-transform group-hover:scale-105">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-[15px] text-[#1A1A2E] tracking-tight">NyayaSetu</span>
+            <span className="font-medium text-[15px] text-[#1A1A2E] tracking-tight">IPBLI</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-0.5">

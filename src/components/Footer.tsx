@@ -17,7 +17,7 @@ export default function Footer() {
               <div className="w-6 h-6 bg-[#1E3A5F] rounded-md flex items-center justify-center">
                 <Scale className="w-3 h-3 text-[#C69C3F]" />
               </div>
-              <span className="text-sm font-medium text-[#1A1A2E]">NyayaSetu</span>
+              <span className="text-sm font-medium text-[#1A1A2E]">IPBLI</span>
             </Link>
             <p className="text-xs text-[#6B7280] leading-relaxed">
               A Section 8 non-profit providing free legal representation to eligible citizens across India.
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-5 border-t border-[#e8e3db] flex flex-col md:flex-row justify-between items-center gap-2 text-[11px] text-[#6B7280]">
-          <p>&copy; {new Date().getFullYear()} NyayaSetu Foundation. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} IPBLI Foundation. All rights reserved.</p>
           <p>Registered Section 8 Non-Profit · New Delhi, India</p>
         </div>
       </div>

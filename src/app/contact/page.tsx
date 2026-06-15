@@ -42,7 +42,7 @@ export default function Contact() {
             Get in touch
           </h1>
           <p className="text-base text-[#6B7280]">
-            For partnerships, institutional grants, media inquiries, or general questions about NyayaSetu.
+            For partnerships, institutional grants, media inquiries, or general questions about IPBLI.
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#1A1A2E]">Email</p>
-                  <a href="mailto:admin@nyayasetu.org" className="text-sm text-[#1E3A5F] hover:underline">admin@nyayasetu.org</a>
+                  <a href="mailto:admin@ipbli.org" className="text-sm text-[#1E3A5F] hover:underline">admin@ipbli.org</a>
                   <p className="text-xs text-[#6B7280] mt-0.5">Response within 48–72 hours</p>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#1A1A2E]">Registered Office</p>
-                  <p className="text-sm text-[#6B7280]">NyayaSetu Foundation</p>
+                  <p className="text-sm text-[#6B7280]">IPBLI Foundation</p>
                   <p className="text-sm text-[#6B7280]">South Extension Part II</p>
                   <p className="text-sm text-[#6B7280]">New Delhi, 110049</p>
                 </div>

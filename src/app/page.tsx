@@ -22,7 +22,7 @@ export default function HomePage() {
               Justice should never depend on your ability to pay.
             </h1>
             <p className="text-base text-[#6B7280] leading-relaxed mb-8 max-w-lg">
-              NyayaSetu provides free legal representation to eligible citizens through our empaneled network of qualified advocates. No fees. No middlemen. Just justice.
+              IPBLI provides free legal representation to eligible citizens through our empaneled network of qualified advocates. No fees. No middlemen. Just justice.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/apply">
@@ -59,7 +59,7 @@ export default function HomePage() {
       <section className="py-16 md:py-20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-2xl font-medium text-[#1A1A2E] mb-2">How NyayaSetu works</h2>
+            <h2 className="text-2xl font-medium text-[#1A1A2E] mb-2">How IPBLI works</h2>
             <p className="text-sm text-[#6B7280] max-w-md mx-auto">A dignified, three-step process from application to courtroom representation.</p>
           </div>
 
@@ -134,7 +134,7 @@ export default function HomePage() {
                 We are not a marketplace.<br />We are an institution.
               </h2>
               <p className="text-sm text-[#6B7280] leading-relaxed mb-4">
-                NyayaSetu does not connect users with lawyers for a fee. We do not operate a referral service. We assume direct institutional responsibility for the legal aid process — from intake to courtroom representation.
+                IPBLI does not connect users with lawyers for a fee. We do not operate a referral service. We assume direct institutional responsibility for the legal aid process — from intake to courtroom representation.
               </p>
               <p className="text-sm text-[#6B7280] leading-relaxed mb-6">
                 Our advocates are empaneled after rigorous verification. Our operations team conducts manual eligibility reviews. Every case we accept is one we commit to seeing through.

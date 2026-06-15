@@ -70,12 +70,12 @@ export default function SignIn() {
           </div>
         </div>
 
-        {/* NyayaSetu branding */}
+        {/* IPBLI branding */}
         <Link href="/" className="absolute top-8 left-8 flex items-center gap-2.5 group">
           <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
             <Scale className="w-4 h-4 text-[#C69C3F]" />
           </div>
-          <span className="text-white/90 font-medium text-sm tracking-tight">NyayaSetu</span>
+          <span className="text-white/90 font-medium text-sm tracking-tight">IPBLI</span>
         </Link>
       </div>
 
@@ -88,7 +88,7 @@ export default function SignIn() {
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-sm text-[#1A1A2E]">NyayaSetu</span>
+            <span className="font-medium text-sm text-[#1A1A2E]">IPBLI</span>
           </Link>
           <Link href="/" className="text-xs text-[#6B7280] hover:text-[#1A1A2E]">
             ← Back to home
@@ -101,7 +101,7 @@ export default function SignIn() {
             <div className="mb-8">
               <h1 className="text-2xl font-medium text-[#1A1A2E] mb-2">Welcome back</h1>
               <p className="text-sm text-[#6B7280]">
-                Sign in to your NyayaSetu account to continue.
+                Sign in to your IPBLI account to continue.
               </p>
             </div>
 

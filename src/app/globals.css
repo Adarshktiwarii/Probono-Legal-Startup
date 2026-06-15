@@ -34,7 +34,7 @@
 
     --radius: 0.5rem;
 
-    /* NyayaSetu brand */
+    /* IPBLI brand */
     --ns-sapphire: #1E3A5F;
     --ns-sapphire-light: #2B5278;
     --ns-gold: #C69C3F;
@@ -67,7 +67,7 @@
   }
 }
 
-/* NyayaSetu signature accent bar — sapphire to gold gradient */
+/* IPBLI signature accent bar — sapphire to gold gradient */
 .ns-bar {
   height: 3px;
   width: 100%;

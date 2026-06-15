@@ -8,14 +8,14 @@ export default function Terms() {
         <div className="space-y-8 text-sm text-[#6B7280] leading-relaxed">
           <section>
             <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Acceptance</h2>
-            <p>By using the NyayaSetu platform, you agree to these terms. NyayaSetu is a non-profit, pro bono legal aid organization. We are not a law firm and do not provide legal advice directly through this website.</p>
+            <p>By using the IPBLI platform, you agree to these terms. IPBLI is a non-profit, pro bono legal aid organization. We are not a law firm and do not provide legal advice directly through this website.</p>
           </section>
 
           <div className="border-t border-[#e8e3db]" />
 
           <section>
             <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Eligibility</h2>
-            <p>Access to NyayaSetu's pro bono legal services is subject to eligibility criteria. Submitting an application does not guarantee legal representation. All decisions are made by the NyayaSetu Operations Team.</p>
+            <p>Access to IPBLI's pro bono legal services is subject to eligibility criteria. Submitting an application does not guarantee legal representation. All decisions are made by the IPBLI Operations Team.</p>
           </section>
 
           <div className="border-t border-[#e8e3db]" />
@@ -29,7 +29,7 @@ export default function Terms() {
 
           <section>
             <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Contact</h2>
-            <p>Questions about these terms can be directed to <a href="mailto:admin@nyayasetu.org" className="text-[#1E3A5F] hover:underline">admin@nyayasetu.org</a>.</p>
+            <p>Questions about these terms can be directed to <a href="mailto:admin@ipbli.org" className="text-[#1E3A5F] hover:underline">admin@ipbli.org</a>.</p>
           </section>
         </div>
       </div>

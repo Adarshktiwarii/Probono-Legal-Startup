@@ -246,8 +246,8 @@ export default function DonatePage() {
                               <div className="border border-[#e8e3db] rounded-xl p-4 space-y-3">
                                 <p className="text-xs text-[#6B7280] font-medium">UPI ID</p>
                                 <div className="flex items-center justify-between bg-[#F9F7F4] p-3 rounded-lg">
-                                  <span className="text-sm font-medium text-[#1A1A2E]">donate@nyayasetu.org</span>
-                                  <button onClick={() => handleCopy("donate@nyayasetu.org", "upi")} className="text-[#1E3A5F] hover:text-[#2B5278]">
+                                  <span className="text-sm font-medium text-[#1A1A2E]">donate@ipbli.org</span>
+                                  <button onClick={() => handleCopy("donate@ipbli.org", "upi")} className="text-[#1E3A5F] hover:text-[#2B5278]">
                                     {copied === "upi" ? <Check className="w-4 h-4 text-[#5B8A72]" /> : <Copy className="w-4 h-4" />}
                                   </button>
                                 </div>
@@ -258,7 +258,7 @@ export default function DonatePage() {
                               <div className="border border-[#e8e3db] rounded-xl p-4 space-y-2">
                                 <p className="text-xs text-[#6B7280] font-medium mb-2">Bank account details</p>
                                 {[
-                                  { label: "Account Name", value: "NyayaSetu Foundation" },
+                                  { label: "Account Name", value: "IPBLI Foundation" },
                                   { label: "Account Number", value: "920020043215678" },
                                   { label: "IFSC Code", value: "UTIB0001234" },
                                   { label: "Bank", value: "Axis Bank, Connaught Place, New Delhi" },
@@ -308,7 +308,7 @@ export default function DonatePage() {
                               <div className="bg-[#1E3A5F]/5 border border-[#1E3A5F]/15 p-4 rounded-xl">
                                 <p className="text-xs text-[#6B7280] leading-relaxed">
                                   <span className="text-[#1A1A2E] font-medium">CSR Compliance: </span>
-                                  NyayaSetu qualifies under Schedule VII (item iii) for CSR activities. A formal acknowledgment letter will be issued.
+                                  IPBLI qualifies under Schedule VII (item iii) for CSR activities. A formal acknowledgment letter will be issued.
                                 </p>
                               </div>
                             )}

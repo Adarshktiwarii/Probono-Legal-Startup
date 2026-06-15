@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NyayaSetu — Free Legal Aid for Every Citizen",
+  title: "IPBLI — Free Legal Aid for Every Citizen",
   description: "India's pro bono legal representation organization. Connecting eligible citizens with qualified advocates at zero cost.",
-  keywords: 'pro bono, free legal aid, NyayaSetu, legal help India, bail assistance, fundamental rights, Delhi, Madhya Pradesh',
+  keywords: 'pro bono, free legal aid, IPBLI, legal help India, bail assistance, fundamental rights, Delhi, Madhya Pradesh',
   themeColor: '#1E3A5F',
 };
 

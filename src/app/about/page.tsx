@@ -8,12 +8,12 @@ export default function About() {
       {/* Hero */}
       <section className="py-16 md:py-20">
         <div className="container max-w-3xl">
-          <p className="text-xs text-[#1E3A5F] font-medium uppercase tracking-wider mb-3">About NyayaSetu</p>
+          <p className="text-xs text-[#1E3A5F] font-medium uppercase tracking-wider mb-3">About IPBLI</p>
           <h1 className="text-3xl md:text-4xl font-medium text-[#1A1A2E] leading-tight tracking-tight mb-5">
             An institution built for justice, not profit.
           </h1>
           <p className="text-base text-[#6B7280] leading-relaxed">
-            NyayaSetu is a registered Section 8 non-profit organization established to ensure that no eligible citizen is denied justice due to financial constraints. We provide free legal representation through our own institutional framework.
+            IPBLI is a registered Section 8 non-profit organization established to ensure that no eligible citizen is denied justice due to financial constraints. We provide free legal representation through our own institutional framework.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function About() {
           <div className="space-y-4 text-sm text-[#6B7280] leading-relaxed">
             <p>India promises justice to every citizen. Yet for millions, justice remains inaccessible — not because the law does not exist, but because access to legal representation remains financially out of reach.</p>
             <p>A right that cannot be defended is a right that effectively does not exist.</p>
-            <p>NyayaSetu is not a legal marketplace. We are not a lawyer discovery platform. We are not a referral service. We are a pro bono legal representation organization that directly provides legal assistance to eligible citizens through our empaneled network of advocates.</p>
+            <p>IPBLI is not a legal marketplace. We are not a lawyer discovery platform. We are not a referral service. We are a pro bono legal representation organization that directly provides legal assistance to eligible citizens through our empaneled network of advocates.</p>
           </div>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function About() {
             <p className="text-lg text-[#1A1A2E] leading-relaxed italic">
               &ldquo;Justice should not be determined by wealth. The ability to defend one&apos;s rights should never depend upon the ability to pay. Legal representation should not be a privilege reserved for those with financial means.&rdquo;
             </p>
-            <p className="text-xs text-[#6B7280] mt-3">— NyayaSetu Founding Charter</p>
+            <p className="text-xs text-[#6B7280] mt-3">— IPBLI Founding Charter</p>
           </div>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function About() {
               </div>
             ))}
           </div>
-          <p className="text-sm font-medium text-[#1E3A5F] mt-8">NyayaSetu exists at the intersection of justice, technology, and public trust.</p>
+          <p className="text-sm font-medium text-[#1E3A5F] mt-8">IPBLI exists at the intersection of justice, technology, and public trust.</p>
         </div>
       </section>
 

@@ -1,6 +1,6 @@
-# NyayaSetu
+# IPBLI
 
-NyayaSetu is a modern, scalable SaaS platform built for Section 8 legal aid organizations in India. It connects indigent citizens facing criminal charges with dedicated pro bono advocates.
+IPBLI is a modern, scalable SaaS platform built for Section 8 legal aid organizations in India. It connects indigent citizens facing criminal charges with dedicated pro bono advocates.
 
 ## Tech Stack
 - **Frontend**: Next.js 15 (App Router), React 19, Tailwind CSS v4, Shadcn UI

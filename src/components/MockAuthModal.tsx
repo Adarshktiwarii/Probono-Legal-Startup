@@ -38,7 +38,7 @@ export function MockAuthModal({ isOpen, onClose }: MockAuthModalProps) {
               <div className="w-9 h-9 bg-[#1E3A5F] rounded-lg flex items-center justify-center mx-auto mb-3">
                 <Scale className="w-4 h-4 text-[#C69C3F]" />
               </div>
-              <h2 className="text-base font-medium text-[#1A1A2E]">Sign in to NyayaSetu</h2>
+              <h2 className="text-base font-medium text-[#1A1A2E]">Sign in to IPBLI</h2>
               <p className="text-xs text-[#6B7280] mt-1">Choose a role to explore the platform</p>
               <span className="inline-block text-[10px] text-[#C69C3F] bg-[#C69C3F]/10 px-2 py-0.5 rounded-full mt-2 border border-[#C69C3F]/20">Demo Mode</span>
             </div>

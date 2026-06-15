@@ -55,7 +55,7 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
         },
-        // NyayaSetu brand
+        // IPBLI brand
         'ns-sapphire': '#1E3A5F',
         'ns-gold': '#C69C3F',
         'ns-sage': '#5B8A72',

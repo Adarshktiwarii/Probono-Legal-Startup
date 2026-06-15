@@ -79,7 +79,7 @@ export default function SignUp() {
           <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-transform group-hover:scale-105">
             <Scale className="w-4 h-4 text-[#C69C3F]" />
           </div>
-          <span className="text-white/90 font-medium text-sm tracking-tight">NyayaSetu</span>
+          <span className="text-white/90 font-medium text-sm tracking-tight">IPBLI</span>
         </Link>
       </div>
 
@@ -91,7 +91,7 @@ export default function SignUp() {
             <div className="w-7 h-7 rounded-md bg-[#1E3A5F] flex items-center justify-center">
               <Scale className="w-3.5 h-3.5 text-[#C69C3F]" />
             </div>
-            <span className="font-medium text-sm text-[#1A1A2E]">NyayaSetu</span>
+            <span className="font-medium text-sm text-[#1A1A2E]">IPBLI</span>
           </Link>
           <Link href="/" className="text-xs text-[#6B7280] hover:text-[#1A1A2E]">← Back to home</Link>
         </div>
@@ -103,7 +103,7 @@ export default function SignUp() {
                 <div className="mb-6">
                   <h1 className="text-2xl font-medium text-[#1A1A2E] mb-2">Create your account</h1>
                   <p className="text-sm text-[#6B7280]">
-                    Join NyayaSetu to access free legal representation.
+                    Join IPBLI to access free legal representation.
                   </p>
                 </div>
 
@@ -211,7 +211,7 @@ export default function SignUp() {
                 </div>
                 <h2 className="text-xl font-medium text-[#1A1A2E] mb-2">Account created</h2>
                 <p className="text-sm text-[#6B7280] mb-8 max-w-xs mx-auto">
-                  Welcome to NyayaSetu, <span className="text-[#1A1A2E] font-medium">{form.name}</span>. You can now sign in and {role === "citizen" ? "apply for legal assistance" : "join our pro bono panel"}.
+                  Welcome to IPBLI, <span className="text-[#1A1A2E] font-medium">{form.name}</span>. You can now sign in and {role === "citizen" ? "apply for legal assistance" : "join our pro bono panel"}.
                 </p>
                 <div className="flex flex-col gap-3">
                   <Link href="/signin">

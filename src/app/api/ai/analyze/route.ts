@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     }
 
     const prompt = `
-      You are an AI assistant for a legal aid NGO called NyayaSetu.
+      You are an AI assistant for a legal aid NGO called IPBLI.
       Your task is to analyze the following case description submitted by an applicant.
       
       Title: ${title}

@@ -8,7 +8,7 @@ export default function Privacy() {
         <div className="space-y-8 text-sm text-[#6B7280] leading-relaxed">
           <section>
             <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Information We Collect</h2>
-            <p>NyayaSetu collects personal, financial, and case information solely for the purpose of assessing eligibility and facilitating pro bono legal representation. This includes your name, contact details, income information, and details about your legal matter.</p>
+            <p>IPBLI collects personal, financial, and case information solely for the purpose of assessing eligibility and facilitating pro bono legal representation. This includes your name, contact details, income information, and details about your legal matter.</p>
           </section>
 
           <div className="border-t border-[#e8e3db]" />
@@ -22,14 +22,14 @@ export default function Privacy() {
 
           <section>
             <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Data Security</h2>
-            <p>All data is encrypted in transit and at rest. Access to personal information is restricted to authorized members of the NyayaSetu Operations Team and empaneled advocates assigned to your case.</p>
+            <p>All data is encrypted in transit and at rest. Access to personal information is restricted to authorized members of the IPBLI Operations Team and empaneled advocates assigned to your case.</p>
           </section>
 
           <div className="border-t border-[#e8e3db]" />
 
           <section>
             <h2 className="text-base font-medium text-[#1A1A2E] mb-2">Contact</h2>
-            <p>For privacy-related inquiries, contact <a href="mailto:admin@nyayasetu.org" className="text-[#1E3A5F] hover:underline">admin@nyayasetu.org</a>.</p>
+            <p>For privacy-related inquiries, contact <a href="mailto:admin@ipbli.org" className="text-[#1E3A5F] hover:underline">admin@ipbli.org</a>.</p>
           </section>
         </div>
       </div>

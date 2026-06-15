@@ -25,7 +25,7 @@ export default function Eligibility() {
             Who qualifies for free representation?
           </h1>
           <p className="text-base text-[#6B7280] leading-relaxed">
-            NyayaSetu exists for people who genuinely need support. Every application is manually reviewed by our operations team against strict institutional criteria.
+            IPBLI exists for people who genuinely need support. Every application is manually reviewed by our operations team against strict institutional criteria.
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default function Eligibility() {
               <p className="text-xs text-[#C69C3F] font-medium uppercase tracking-wider mb-3">Operational Regions</p>
               <h2 className="text-xl font-medium text-[#1A1A2E] mb-4">Currently serving two states</h2>
               <p className="text-sm text-[#6B7280] leading-relaxed mb-6">
-                NyayaSetu is currently operational in the <span className="text-[#1A1A2E] font-medium">National Capital Territory of Delhi</span> and the <span className="text-[#1A1A2E] font-medium">State of Madhya Pradesh</span>. We plan to expand to additional states in upcoming phases.
+                IPBLI is currently operational in the <span className="text-[#1A1A2E] font-medium">National Capital Territory of Delhi</span> and the <span className="text-[#1A1A2E] font-medium">State of Madhya Pradesh</span>. We plan to expand to additional states in upcoming phases.
               </p>
               <div className="flex gap-3">
                 <div className="flex-1 border border-[#e8e3db] rounded-xl p-4 text-center">
