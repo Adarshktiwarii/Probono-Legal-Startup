@@ -67,7 +67,7 @@ export default function Footer() {
             <p>Registered Section 8 Non-Profit · New Delhi, India</p>
           </div>
           <p className="flex items-center mt-2">
-            Developed and hosted by IPBLI with love in Bangalore, India <Heart className="w-3.5 h-3.5 text-[#C75B39] mx-1 fill-current" />
+            Developed and hosted by <a href="https://www.adarshktiwari.co.in" target="_blank" rel="noopener noreferrer" className="mx-1 font-medium text-[#1E3A5F] hover:underline">Adarsh & Consultants</a> with love in Bangalore, India <Heart className="w-3.5 h-3.5 text-[#C75B39] mx-1 fill-current" />
           </p>
         </div>
       </div>

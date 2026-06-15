@@ -82,7 +82,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#1A1A2E]">Phone</p>
-                  <p className="text-sm text-[#1E3A5F] hover:underline">+91 XXXXX XXXXX</p>
+                  <a href="tel:+919876543210" className="text-sm text-[#1E3A5F] hover:underline">+91 98765 43210</a>
                   <p className="text-xs text-[#6B7280] mt-0.5">Mon-Fri, 10 AM to 5 PM</p>
                 </div>
               </div>
